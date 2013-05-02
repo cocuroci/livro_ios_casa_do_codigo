@@ -18,6 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.avisoSucessoLavel.hidden = YES;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -75,12 +76,27 @@
     //e.nome = self.nomeField.text;
     //e.quantidadeFuncionarios = [self.quantidadeField.text intValue];
     
+    [self.nomeField resignFirstResponder];
+    
     Empresa *e = [[Empresa alloc] initWithNome:self.nomeField.text eQuantidadeDeFuncionarios:[self.quantidadeField.text intValue]];
     
     [self salvarEmpresa:e];
     [self mostraCatalogo];
     
     [e release];
+    
+    self.avisoSucessoLavel.alpha = 0;
+    
+    [UIView animateWithDuration:1 animations:^{
+        self.avisoSucessoLavel.hidden = NO;
+        self.avisoSucessoLavel.alpha = 1;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:1 delay:2 options:0 animations:^{
+            self.avisoSucessoLavel.alpha = 0;   
+        } completion:^(BOOL finished) {
+            self.avisoSucessoLavel.hidden = YES;
+        }];
+    }];
 }
 
 @end
