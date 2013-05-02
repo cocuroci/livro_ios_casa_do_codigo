@@ -92,4 +92,17 @@
     [self.tabelaContatos deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+- (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [contatos removeObjectAtIndex:indexPath.row];
+    [self.tabelaContatos deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft
+     ];
+    [self.tabelaContatos endUpdates];
+}
+
+- (NSString *) tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return @"Remover";
+}
+
 @end
