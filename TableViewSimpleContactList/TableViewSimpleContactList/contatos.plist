@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contatos</key>
+	<array>
+		<dict>
+			<key>nome</key>
+			<string>André</string>
+			<key>telefone</key>
+			<string>1111-1111</string>
+		</dict>
+		<dict>
+			<key>nome</key>
+			<string>André 2</string>
+			<key>telefone</key>
+			<string>2222-1111</string>
+		</dict>
+		<dict>
+			<key>nome</key>
+			<string>João</string>
+			<key>telefone</key>
+			<string>3333-1111</string>
+		</dict>
+		<dict>
+			<key>nome</key>
+			<string>Luan</string>
+			<key>telefone</key>
+			<string>4444-1111</string>
+		</dict>
+		<dict>
+			<key>nome</key>
+			<string>Gustavo</string>
+			<key>telefone</key>
+			<string>5555-1111</string>
+		</dict>
+		<dict>
+			<key>nome</key>
+			<string>Abilio</string>
+			<key>telefone</key>
+			<string>6666-1111</string>
+		</dict>
+		<dict>
+			<key>nome</key>
+			<string>Ronie</string>
+			<key>telefone</key>
+			<string>1111-7777</string>
+		</dict>
+		<dict>
+			<key>nome</key>
+			<string>Cristiano</string>
+			<key>telefone</key>
+			<string>8822-1111</string>
+		</dict>
+		<dict>
+			<key>nome</key>
+			<string>Fernando</string>
+			<key>telefone</key>
+			<string>9988-1111</string>
+		</dict>
+		<dict>
+			<key>nome</key>
+			<string>Paty</string>
+			<key>telefone</key>
+			<string>1111-1111</string>
+		</dict>
+	</array>
+</dict>
+</plist>
