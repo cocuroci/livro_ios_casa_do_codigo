@@ -95,14 +95,33 @@
 - (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [contatos removeObjectAtIndex:indexPath.row];
-    [self.tabelaContatos deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft
-     ];
+    [self.tabelaContatos deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
     [self.tabelaContatos endUpdates];
 }
 
 - (NSString *) tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return @"Remover";
+}
+
+- (UITableViewCellEditingStyle) tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+- (IBAction)botaoEditarTap:(id)sender
+{
+    UIBarButtonItem *b = (UIBarButtonItem *)sender;
+    if([b.title isEqualToString:@"Editar"])
+    {
+        [self.tabelaContatos setEditing:YES animated:YES];
+        b.title = @"Pronto";
+    }
+    else
+    {
+        [self.tabelaContatos setEditing:NO animated:YES];
+        b.title = @"Editar";
+    }
 }
 
 @end

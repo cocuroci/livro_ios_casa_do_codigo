@@ -14,7 +14,6 @@
 
 @property (retain, nonatomic) IBOutlet UITextField *nomeField;
 @property (retain, nonatomic) IBOutlet UITextField *quantidadeField;
-@property (retain, nonatomic) IBOutlet UILabel *avisoSucessoLavel;
 
 - (IBAction)incrementadorAlterado:(id)sender;
 - (IBAction)salvar:(id)sender;

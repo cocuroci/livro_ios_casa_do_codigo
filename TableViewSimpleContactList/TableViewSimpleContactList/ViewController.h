@@ -15,4 +15,6 @@
 
 @property (retain, nonatomic) IBOutlet UITableView *tabelaContatos;
 
+- (IBAction)botaoEditarTap:(id)sender;
+
 @end

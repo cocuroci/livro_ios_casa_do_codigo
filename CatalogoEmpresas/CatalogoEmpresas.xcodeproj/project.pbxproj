@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D255F091733FAFE00BC248C /* ExibeCatalogoControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D255F071733FAFE00BC248C /* ExibeCatalogoControllerViewController.m */; };
+		7D255F0A1733FAFE00BC248C /* ExibeCatalogoControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D255F081733FAFE00BC248C /* ExibeCatalogoControllerViewController.xib */; };
 		7DC165FA1732D17D006116AB /* Empresa.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC165F91732D17D006116AB /* Empresa.m */; };
 		7DCD852D1732CBF2009C184F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DCD852C1732CBF2009C184F /* UIKit.framework */; };
 		7DCD852F1732CBF2009C184F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DCD852E1732CBF2009C184F /* Foundation.framework */; };
@@ -22,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D255F061733FAFE00BC248C /* ExibeCatalogoControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExibeCatalogoControllerViewController.h; sourceTree = "<group>"; };
+		7D255F071733FAFE00BC248C /* ExibeCatalogoControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExibeCatalogoControllerViewController.m; sourceTree = "<group>"; };
+		7D255F081733FAFE00BC248C /* ExibeCatalogoControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExibeCatalogoControllerViewController.xib; sourceTree = "<group>"; };
 		7DC165F81732D17D006116AB /* Empresa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Empresa.h; sourceTree = "<group>"; };
 		7DC165F91732D17D006116AB /* Empresa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Empresa.m; sourceTree = "<group>"; };
 		7DCD85291732CBF2009C184F /* CatalogoEmpresas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatalogoEmpresas.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +97,9 @@
 				7DCD853C1732CBF2009C184F /* AppDelegate.m */,
 				7DCD85441732CBF2009C184F /* ViewController.h */,
 				7DCD85451732CBF2009C184F /* ViewController.m */,
+				7D255F061733FAFE00BC248C /* ExibeCatalogoControllerViewController.h */,
+				7D255F071733FAFE00BC248C /* ExibeCatalogoControllerViewController.m */,
+				7D255F081733FAFE00BC248C /* ExibeCatalogoControllerViewController.xib */,
 				7DC165F81732D17D006116AB /* Empresa.h */,
 				7DC165F91732D17D006116AB /* Empresa.m */,
 				7DCD85471732CBF2009C184F /* ViewController.xib */,
@@ -170,6 +178,7 @@
 				7DCD85411732CBF2009C184F /* Default@2x.png in Resources */,
 				7DCD85431732CBF2009C184F /* Default-568h@2x.png in Resources */,
 				7DCD85491732CBF2009C184F /* ViewController.xib in Resources */,
+				7D255F0A1733FAFE00BC248C /* ExibeCatalogoControllerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +193,7 @@
 				7DCD853D1732CBF2009C184F /* AppDelegate.m in Sources */,
 				7DCD85461732CBF2009C184F /* ViewController.m in Sources */,
 				7DC165FA1732D17D006116AB /* Empresa.m in Sources */,
+				7D255F091733FAFE00BC248C /* ExibeCatalogoControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

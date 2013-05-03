@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Empresa.h"
+#import "ExibeCatalogoControllerViewController.h"
 
 @interface ViewController ()
 
@@ -18,7 +19,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.avisoSucessoLavel.hidden = YES;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -28,11 +28,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewDidAppear:(BOOL)animated
+{
+    self.title = @"Cadastro";
+}
+
 - (void)dealloc
 {
     [_nomeField release];
     [_quantidadeField release];
-    [_avisoSucessoLavel release];
     [super dealloc];
 }
 
@@ -40,7 +44,6 @@
 {
     [self setNomeField:nil];
     [self setQuantidadeField:nil];
-    [self setAvisoSucessoLavel:nil];
     [super viewDidUnload];
 }
 
@@ -81,22 +84,15 @@
     Empresa *e = [[Empresa alloc] initWithNome:self.nomeField.text eQuantidadeDeFuncionarios:[self.quantidadeField.text intValue]];
     
     [self salvarEmpresa:e];
-    [self mostraCatalogo];
+    //[self mostraCatalogo];
     
+    ExibeCatalogoControllerViewController *c = [[ExibeCatalogoControllerViewController alloc] init];
+    c.catalogo = catalogo;
+    
+    [self.navigationController pushViewController:c animated:YES];
+    
+    [c release];
     [e release];
-    
-    self.avisoSucessoLavel.alpha = 0;
-    
-    [UIView animateWithDuration:1 animations:^{
-        self.avisoSucessoLavel.hidden = NO;
-        self.avisoSucessoLavel.alpha = 1;
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:1 delay:2 options:0 animations:^{
-            self.avisoSucessoLavel.alpha = 0;   
-        } completion:^(BOOL finished) {
-            self.avisoSucessoLavel.hidden = YES;
-        }];
-    }];
 }
 
 @end
