@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController <UIScrollViewDelegate> {
     NSArray *elementos;
     NSMutableArray *imagens;
+    int paginaAtual;
 }
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scroll;

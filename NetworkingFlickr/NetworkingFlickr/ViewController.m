@@ -55,11 +55,11 @@
     
     for(NSDictionary *item in elementos)
     {        
-        CGRect posicao = CGRectMake(indice * largura, 0, largura, altura);
+        CGRect posicao = CGRectMake(indice++ * largura, 0, largura, altura);
         UIImageView *img = [[UIImageView alloc] initWithFrame:posicao];
         [self.scroll addSubview:img];
         [imagens addObject:img];
-        indice++;
+        //indice++;
     }    
     
     [self carregaImagemRemota:0];
@@ -67,6 +67,8 @@
 
 -(void)carregaImagemRemota:(int)indice
 {
+    paginaAtual = indice;
+    
     NSDictionary *item = [elementos objectAtIndex:indice];
     NSString *url = [[item objectForKey:@"media"] objectForKey:@"m"];
     
@@ -104,10 +106,35 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    NSLog(@"rotation");
+    return YES;
+}
+
+-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    float largura = self.scroll.frame.size.width;
+    float altura  = self.scroll.frame.size.height;
+    int indice = 0;
+    
+    self.scroll.contentSize = CGSizeMake(largura * elementos.count, altura);
+    
+    for(UIImageView *img in self.scroll.subviews)
+    {
+        if(img.frame.size.width > 7 && img.frame.size.height > 7)
+        {
+            img.frame = CGRectMake(indice++ * largura, 0, largura, altura);
+        }
+    }
+    
+    CGPoint novaPosicao = CGPointMake(largura * paginaAtual, 0);
+    [self.scroll setContentOffset:novaPosicao animated:NO];
+}
+
 - (void)viewDidUnload
 {
     [self setScroll:nil];
     [super viewDidUnload];
 }
-
 @end
