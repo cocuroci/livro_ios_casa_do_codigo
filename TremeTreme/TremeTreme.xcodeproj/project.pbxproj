@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D3253F61737FAA3003364B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3253F51737FAA3003364B7 /* UIKit.framework */; };
+		7D3253F81737FAA3003364B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3253F71737FAA3003364B7 /* Foundation.framework */; };
+		7D3253FA1737FAA3003364B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3253F91737FAA3003364B7 /* CoreGraphics.framework */; };
+		7D3254001737FAA3003364B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D3253FE1737FAA3003364B7 /* InfoPlist.strings */; };
+		7D3254021737FAA3003364B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3254011737FAA3003364B7 /* main.m */; };
+		7D3254061737FAA3003364B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3254051737FAA3003364B7 /* AppDelegate.m */; };
+		7D3254081737FAA3003364B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3254071737FAA3003364B7 /* Default.png */; };
+		7D32540A1737FAA3003364B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D3254091737FAA3003364B7 /* Default@2x.png */; };
+		7D32540C1737FAA3003364B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D32540B1737FAA3003364B7 /* Default-568h@2x.png */; };
+		7D32540F1737FAA3003364B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D32540E1737FAA3003364B7 /* ViewController.m */; };
+		7D3254121737FAA3003364B7 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D3254101737FAA3003364B7 /* ViewController.xib */; };
+		7D32541A1737FAC2003364B7 /* TremeTremeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3254191737FAC2003364B7 /* TremeTremeView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D3253F21737FAA3003364B7 /* TremeTreme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TremeTreme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D3253F51737FAA3003364B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7D3253F71737FAA3003364B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7D3253F91737FAA3003364B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7D3253FD1737FAA3003364B7 /* TremeTreme-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TremeTreme-Info.plist"; sourceTree = "<group>"; };
+		7D3253FF1737FAA3003364B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7D3254011737FAA3003364B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D3254031737FAA3003364B7 /* TremeTreme-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TremeTreme-Prefix.pch"; sourceTree = "<group>"; };
+		7D3254041737FAA3003364B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7D3254051737FAA3003364B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7D3254071737FAA3003364B7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7D3254091737FAA3003364B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7D32540B1737FAA3003364B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7D32540D1737FAA3003364B7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7D32540E1737FAA3003364B7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7D3254111737FAA3003364B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		7D3254181737FAC2003364B7 /* TremeTremeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TremeTremeView.h; sourceTree = "<group>"; };
+		7D3254191737FAC2003364B7 /* TremeTremeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TremeTremeView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D3253EF1737FAA3003364B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3253F61737FAA3003364B7 /* UIKit.framework in Frameworks */,
+				7D3253F81737FAA3003364B7 /* Foundation.framework in Frameworks */,
+				7D3253FA1737FAA3003364B7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D3253E91737FAA3003364B7 = {
+			isa = PBXGroup;
+			children = (
+				7D3253FB1737FAA3003364B7 /* TremeTreme */,
+				7D3253F41737FAA3003364B7 /* Frameworks */,
+				7D3253F31737FAA3003364B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D3253F31737FAA3003364B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D3253F21737FAA3003364B7 /* TremeTreme.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D3253F41737FAA3003364B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D3253F51737FAA3003364B7 /* UIKit.framework */,
+				7D3253F71737FAA3003364B7 /* Foundation.framework */,
+				7D3253F91737FAA3003364B7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D3253FB1737FAA3003364B7 /* TremeTreme */ = {
+			isa = PBXGroup;
+			children = (
+				7D3254041737FAA3003364B7 /* AppDelegate.h */,
+				7D3254051737FAA3003364B7 /* AppDelegate.m */,
+				7D32540D1737FAA3003364B7 /* ViewController.h */,
+				7D32540E1737FAA3003364B7 /* ViewController.m */,
+				7D3254101737FAA3003364B7 /* ViewController.xib */,
+				7D3254181737FAC2003364B7 /* TremeTremeView.h */,
+				7D3254191737FAC2003364B7 /* TremeTremeView.m */,
+				7D3253FC1737FAA3003364B7 /* Supporting Files */,
+			);
+			path = TremeTreme;
+			sourceTree = "<group>";
+		};
+		7D3253FC1737FAA3003364B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D3253FD1737FAA3003364B7 /* TremeTreme-Info.plist */,
+				7D3253FE1737FAA3003364B7 /* InfoPlist.strings */,
+				7D3254011737FAA3003364B7 /* main.m */,
+				7D3254031737FAA3003364B7 /* TremeTreme-Prefix.pch */,
+				7D3254071737FAA3003364B7 /* Default.png */,
+				7D3254091737FAA3003364B7 /* Default@2x.png */,
+				7D32540B1737FAA3003364B7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D3253F11737FAA3003364B7 /* TremeTreme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D3254151737FAA3003364B7 /* Build configuration list for PBXNativeTarget "TremeTreme" */;
+			buildPhases = (
+				7D3253EE1737FAA3003364B7 /* Sources */,
+				7D3253EF1737FAA3003364B7 /* Frameworks */,
+				7D3253F01737FAA3003364B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TremeTreme;
+			productName = TremeTreme;
+			productReference = 7D3253F21737FAA3003364B7 /* TremeTreme.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D3253EA1737FAA3003364B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "André Cocuroci";
+			};
+			buildConfigurationList = 7D3253ED1737FAA3003364B7 /* Build configuration list for PBXProject "TremeTreme" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7D3253E91737FAA3003364B7;
+			productRefGroup = 7D3253F31737FAA3003364B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D3253F11737FAA3003364B7 /* TremeTreme */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D3253F01737FAA3003364B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3254001737FAA3003364B7 /* InfoPlist.strings in Resources */,
+				7D3254081737FAA3003364B7 /* Default.png in Resources */,
+				7D32540A1737FAA3003364B7 /* Default@2x.png in Resources */,
+				7D32540C1737FAA3003364B7 /* Default-568h@2x.png in Resources */,
+				7D3254121737FAA3003364B7 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D3253EE1737FAA3003364B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3254021737FAA3003364B7 /* main.m in Sources */,
+				7D3254061737FAA3003364B7 /* AppDelegate.m in Sources */,
+				7D32540F1737FAA3003364B7 /* ViewController.m in Sources */,
+				7D32541A1737FAC2003364B7 /* TremeTremeView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7D3253FE1737FAA3003364B7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D3253FF1737FAA3003364B7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7D3254101737FAA3003364B7 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D3254111737FAA3003364B7 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D3254131737FAA3003364B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7D3254141737FAA3003364B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D3254161737FAA3003364B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TremeTreme/TremeTreme-Prefix.pch";
+				INFOPLIST_FILE = "TremeTreme/TremeTreme-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7D3254171737FAA3003364B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TremeTreme/TremeTreme-Prefix.pch";
+				INFOPLIST_FILE = "TremeTreme/TremeTreme-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D3253ED1737FAA3003364B7 /* Build configuration list for PBXProject "TremeTreme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3254131737FAA3003364B7 /* Debug */,
+				7D3254141737FAA3003364B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D3254151737FAA3003364B7 /* Build configuration list for PBXNativeTarget "TremeTreme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D3254161737FAA3003364B7 /* Debug */,
+				7D3254171737FAA3003364B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D3253EA1737FAA3003364B7 /* Project object */;
+}
